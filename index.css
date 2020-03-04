@@ -1,0 +1,57 @@
+:root {
+  --font-color: white;
+  --workflow: #3b1980;
+  --step: #5324b3;
+  --action: #6b2ee6;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  color: var(--font-color);
+}
+
+.wrapper {
+  display: flex;
+}
+
+.workflow {
+  width: 300px;
+  padding: 15px;
+  background-color: var(--workflow);
+  margin-right: 10px;
+}
+
+.workflow:last-child {
+  margin-right: unset;
+}
+
+.step {
+  padding: 15px;
+  background-color: var(--step);
+}
+
+.action {
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: var(--action);
+  height: 20px;
+  position: relative;
+}
+
+.over {
+  margin-top: 30px;
+}
+
+/* .action:before {
+  content: '';
+  background-color: green;
+  height: 20px;
+  width: 100px;
+  position: absolute;
+} */
+
+.action:last-child {
+  margin-bottom: unset;
+}
